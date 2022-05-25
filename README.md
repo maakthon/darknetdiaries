@@ -1,7 +1,7 @@
 # darknetdiaries
 ## Download all Episodes from Darknet Diaries Podcast using Python script.
 
-![alt text](<./bg.jpg>) 
+![alt text](<./zbackground.jpg>) 
 
 Dependencies : 
   - requests
