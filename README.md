@@ -8,6 +8,12 @@ Dependencies :
   - beautifulsoup4
   - Faker
 
-or just type :
+### or just type :
 
     pip3 install -r requirements.txt
+    
+### Fire the python script
+
+    python3 darknetdiaries-episodes.py
+    
+### Author : @Maakthon
