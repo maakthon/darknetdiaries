@@ -11,13 +11,13 @@ from bs4 import BeautifulSoup as soup
 from faker import Faker
 
 fk = Faker()
-epiLink = "https://darknetdiaries.com/episode/"
+epiLink   = "https://darknetdiaries.com/episode/"
 megaphone = "https://traffic.megaphone.fm/"
-mp3 = ".mp3"
+mp3       = ".mp3"
 
 def EpiNums(epiLink):
 	# Get numbers of total episodes
-	headers = {"User-Agent":fk.user_agent()}
+	headers     = {"User-Agent":fk.user_agent()}
 	response    = get(epiLink , headers=headers)
 	htmlContent = soup(response.content , "html.parser")
 	numberOfEpi = int(htmlContent.find_all("a" , {"class":"button-light"})[0]["href"].split("/")[-2])
